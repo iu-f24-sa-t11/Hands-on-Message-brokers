@@ -25,7 +25,34 @@ Demo is available on YouTube: [Link](https://youtu.be/6ck_1lZ0SNU)
 
 ## Report
 
-TODO
+#### 1. Resourse analysis
+
+On the first screenshot you may see for single case:
+![Single - resourses](https://github.com/iu-f24-sa-t11/Hands-on-Message-brokers/raw/main/static/single-1.png)
+and on the second screenshot - for multiple case:
+![Multiple - resourses](https://github.com/iu-f24-sa-t11/Hands-on-Message-brokers/raw/main/static/multiple-1.jpg)
+
+ As you can see on these screenshots:
+ - In the **single setup**, a **single container** is consuming a **high amount of CPU resources**, leading to a potential bottleneck.
+ - In contrast, the **multiple setup** distributes the load **evenly across containers**, resulting in better utilization and balanced resource consumption.
+
+#### 2. Response times analysis
+
+On the first screenshot you may see for single case:
+![Single - resourses](https://github.com/iu-f24-sa-t11/Hands-on-Message-brokers/raw/main/static/single-2.jpg)
+and on the second screenshot - for multiple case:
+![Multiple - resourses](https://github.com/iu-f24-sa-t11/Hands-on-Message-brokers/raw/main/static/multiple-2.jpg)
+
+For better comparing we plot graphics:
+Single:
+![Single - resourses](https://github.com/iu-f24-sa-t11/Hands-on-Message-brokers/raw/main/static/single-3.jpg)
+Multiple:
+![Multiple - resourses](https://github.com/iu-f24-sa-t11/Hands-on-Message-brokers/raw/main/static/multiple-3.jpg)
+
+We can see that:
+  - **Average**, **maximum**, and **percentile (50th and 95th)** response times are **lower** compared to the **multiple setup**.
+  - This is because the **single setup** does not have a connection to **RabbitMQ**, which reduces the overhead in processing.
+
 
 ## Project Structure
 
