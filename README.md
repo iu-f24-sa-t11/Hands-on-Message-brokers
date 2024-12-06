@@ -25,6 +25,12 @@ Demo is available on YouTube: [Link](https://youtu.be/6ck_1lZ0SNU)
 
 ## Report
 
+#### Definitions
+
+Single case - single deployable app as pipes-and-filters with services as filters and multiprocess queues as pipes.
+
+Multiple case - multiple deployable services with RabbitMQ.
+
 #### 1. Resourse analysis
 
 On the first screenshot you may see for single case:
@@ -44,6 +50,7 @@ and on the second screenshot - for multiple case:
 ![Multiple - resourses](https://github.com/iu-f24-sa-t11/Hands-on-Message-brokers/raw/main/static/multiple-2.jpg)
 
 For better comparing we plot graphics:
+
 Single:
 ![Single - resourses](https://github.com/iu-f24-sa-t11/Hands-on-Message-brokers/raw/main/static/single-3.jpg)
 Multiple:
